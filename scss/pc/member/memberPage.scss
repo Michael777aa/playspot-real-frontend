@@ -1,0 +1,266 @@
+#pc-wrap {
+	#member-page {
+		background: #f6f6f6;
+		.container {
+			.member-page {
+				position: relative;
+				width: 100%;
+				flex-direction: row;
+				gap: 25px;
+				padding-top: 96px;
+				.back-frame {
+					width: 1260px;
+					height: auto;
+					display: flex;
+					flex-direction: row;
+					margin: 100px 0 200px 0;
+					border-radius: 12px;
+					border: 1px solid #c4c4c4;
+					background: #fff;
+					box-shadow: 0px 1px 4px 0px rgba(24, 26, 32, 0.07);
+					.left-config {
+						position: relative;
+						padding: 0 0 0 0;
+						width: 266px;
+						height: 700px;
+						border-radius: 12px;
+						background: #fff;
+						border: 1px solid rgba(196, 196, 196, 0.79);
+						box-shadow: 0px 1px 4px 0px rgba(24, 26, 32, 0.07);
+						margin: 180px 20px 40px 20px;
+						.profile {
+							position: relative;
+							overflow: hidden;
+							display: flex;
+							align-items: center; /* Center align profile elements */
+							gap: 24px; /* Comfortable spacing */
+							background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Subtle gradient for a premium feel */
+							padding: 15px;
+							border-radius: 20px; /* Softer, modern corners */
+							box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.7); /* Neomorphic shadow */
+							transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+							&:hover {
+								box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.9); /* Stronger hover shadow */
+							}
+							.user-phone {
+								display: flex;
+								flex-direction: row;
+								align-items: center;
+								gap: 8px;
+
+								img {
+									width: 22px; /* Larger icon for better readability */
+									height: 22px;
+									filter: brightness(0.5); /* Dimmer for subtlety */
+								}
+
+								span {
+									font-size: 16px; /* Larger for clarity */
+									font-weight: 400;
+									color: #6d6d6d; /* Muted text for a softer look */
+								}
+							}
+							.profile-img {
+								position: relative;
+								overflow: hidden;
+								width: 100px; /* Slightly larger for emphasis */
+								height: 100px;
+								border-radius: 50%; /* Perfectly circular */
+								border: 4px solid #4caf50; /* Fresh green border */
+								background: #f0f0f0; /* Background for placeholder */
+								box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Light shadow for elevation */
+								transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+								img {
+									width: 100%;
+									height: 100%;
+									object-fit: cover; /* Maintains aspect ratio */
+									transition: transform 0.3s ease, filter 0.3s ease;
+								}
+
+								&:hover {
+									transform: scale(1.15); /* Noticeable zoom */
+									box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Bolder shadow on hover */
+								}
+							}
+
+							.user-info {
+								display: flex;
+								flex-direction: column;
+								justify-content: center; /* Vertically centers the text */
+								gap: 12px;
+
+								.user-name {
+									color: #2d2d2d; /* Darker text for strong contrast */
+									font-family: 'Roboto', sans-serif;
+									font-size: 20px; /* Bigger font for importance */
+									font-weight: bold;
+									text-transform: uppercase; /* Modern, clean look */
+									letter-spacing: 1px; /* Adds spacing for elegance */
+								}
+
+								.view-list {
+									font-size: 14px;
+									font-weight: 600;
+									color: #ff5722; /* Vibrant orange for action items */
+									cursor: pointer;
+									transition: color 0.3s ease, text-decoration 0.3s ease;
+
+									&:hover {
+										color: #e64a19; /* Darker shade on hover */
+										text-decoration: underline; /* Clear feedback for interactivity */
+									}
+								}
+							}
+						}
+						.follow-button-box {
+							height: 35px;
+							flex-direction: row;
+							gap: 10px;
+							align-items: center;
+							margin-top: 15px;
+							button {
+								border: 1px solid #b9b9b9;
+								color: #181a20;
+								font-family: $font;
+								font-size: 14px;
+								font-style: normal;
+								font-weight: 400;
+								line-height: normal;
+							}
+							p {
+								color: #b9b9b9;
+								font-family: $font;
+								font-size: 14px;
+								font-style: italic;
+								font-weight: 400;
+								line-height: normal;
+							}
+						}
+						.sections {
+							display: flex;
+							flex-direction: column;
+
+							gap: 95px;
+							margin-top: 30px;
+							.section {
+								height: auto;
+								.title {
+									font-family: $font;
+									font-size: 15px;
+									font-style: normal;
+									font-weight: 400;
+									line-height: 28px;
+								}
+								.sub-section {
+									width: 230px;
+									height: 26px;
+									display: flex;
+									flex-direction: column;
+									align-items: center;
+									cursor: pointer;
+									padding: 0 5px 0 5px;
+									li {
+										height: 33px;
+										margin-bottom: 6px;
+										border-radius: 4px;
+									}
+									.focus {
+										height: 50px;
+										border-radius: 10px;
+										p {
+											font-size: 14px;
+											color: #ee1515;
+										}
+									}
+									.flex-box {
+										display: flex;
+										align-items: center;
+										.com-icon {
+											display: flex;
+											align-items: center; /* Ensures icons are vertically aligned */
+											justify-content: center; /* Centers the icon within its container */
+											background-color: #f1f1f1; /* Light background for better visibility */
+											width: 25px; /* Increased size for a modern look */
+											height: 25px;
+											border-radius: 50%; /* Circular shape for a clean design */
+											box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+											transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+											.focus {
+												background-color: #007bff;
+											}
+											&:hover {
+												/* Interactive blue background on hover */
+												transform: scale(1.1); /* Slight zoom for feedback */
+											}
+
+											img {
+												width: 20px; /* Ensures icon fits well inside the container */
+												height: 20px;
+												filter: grayscale(50%); /* Muted look for icons */
+												transition: filter 0.3s ease;
+
+												&:hover {
+													filter: none; /* Full color on hover */
+												}
+											}
+										}
+
+										p {
+											font-size: 16px; /* Enhanced readability */
+											font-weight: 500; /* Medium weight for clear text */
+											color: #555555; /* Neutral gray for a modern appearance */
+											margin-left: 12px; /* Spacing between icon and text */
+											transition: color 0.3s ease; /* Smooth color transition on hover */
+
+											&:hover {
+												color: #e64a19; /* Blue for interactivity */
+											}
+											.focus {
+												color: #007bff;
+											}
+										}
+									}
+								}
+								img {
+									width: 16px;
+									height: 16px;
+								}
+								.sub-title {
+									color: #333333; /* Neutral dark gray for modern text appearance */
+									font-family: 'Roboto', sans-serif; /* Sleek and modern font */
+									font-size: 20px; /* Slightly larger for better readability */
+									font-weight: 900; /* Bold for emphasis */
+									line-height: 2; /* Optimized line height for balanced spacing */
+									letter-spacing: 0.5px; /* Subtle letter spacing for a refined look */
+									text-transform: capitalize; /* Ensures text starts with a capital letter */
+									transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+
+									&:hover {
+										color: #007bff; /* Interactive blue for hover state */
+									}
+								}
+							}
+						}
+					}
+					.main-config {
+						position: relative;
+						width: 936px;
+						margin-top: 52px;
+						align-items: center;
+						gap: 109px;
+						.list-config {
+							display: flex;
+							width: 100%;
+							height: auto;
+							flex-direction: row;
+							flex-wrap: wrap;
+							gap: 22px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
