@@ -14,7 +14,7 @@ const CoursePlayer: FC<Props> = ({ demoUrl }) => {
     const fetchVideoData = async () => {
       try {
         const response = await axios.post(
-          `http://localhost:3007/graphql`,
+          `http://195.35.9.39:4001/graphql`,
           {
             query: `
               mutation GenerateVideoUrl($videoId: String!) {
