@@ -476,10 +476,22 @@ const AddFacility = ({ initialValues, ...props }: any) => {
 								}}
 							/>
 						</Stack>
+						<Stack className="price-year-after-price">
+									<Typography className="title">Demo Url</Typography>
+									<input
+										type="text"
+										className="description-input"
+										placeholder={'demoUrl'}
+										value={insertFacilityData.demoUrl}
+										onChange={({ target: { value } }) =>
+											setinsertFacilityData({ ...insertFacilityData, demoUrl: value })
+										}
+									/>
+								</Stack>
 						{/* parking */}
-						<Stack className="config-row" direction="row" gap={2}>
+						<Stack className="config-row" direction="row" gap={5}>
 							<Stack className="price-year-after-price">
-								<Typography className="title">Parking Available</Typography>
+								<Typography className="title">Parking </Typography>
 								<select
 									className="select-description"
 									value={insertFacilityData.parkingAvailable ? 'yes' : 'no'}
@@ -492,7 +504,7 @@ const AddFacility = ({ initialValues, ...props }: any) => {
 								</select>
 							</Stack>
 							<Stack className="price-year-after-price">
-								<Typography className="title">Pet Allowed</Typography>
+								<Typography className="title">Pet </Typography>
 								<select
 									className="select-description"
 									value={insertFacilityData.facilityPetsAllowed ? 'yes' : 'no'}
@@ -554,46 +566,62 @@ const AddFacility = ({ initialValues, ...props }: any) => {
 						</Stack>
 						{/* Upload Section */}
 						<Stack className="upload-section">
-							<Typography
-								className="title"
-								sx={{ fontWeight: '600', fontSize: '1rem', color: '#333', marginBottom: '10px' }}
-							>
-								Upload Photos
-							</Typography>
-							<Stack
-								className="upload-box"
-								sx={{
-									padding: '20px',
-									border: '1px dashed #ccc',
-									borderRadius: '12px',
-									textAlign: 'center',
-								}}
-							>
-								<Typography sx={{ fontSize: '14px', color: '#666', marginBottom: '10px' }}>
-									Drag and drop images here or click to browse
-								</Typography>
+						<Typography
+    className="title"
+    sx={{ fontWeight: '600', fontSize: '1.5rem',  color: '#333', marginBottom: '10px', position: "relative", left:"55px" }}
+  >
+    Upload Photos
+  </Typography>
+  <Stack className="images-box">
+							<Stack className="upload-box">
+							
+								<Stack className="text-box" style={{marginBottom:"20px"}}>
+								<Typography variant="body2" color="textSecondary" align="center">
+  Drag & drop images here or click to upload
+</Typography>
+
+								</Stack>
 								<Button
-									onClick={() => inputRef.current.click()}
-									sx={{
-										padding: '10px 20px',
-										fontSize: '14px',
-										backgroundColor: '#007bff',
-										color: '#fff',
-										borderRadius: '8px',
-										'&:hover': { backgroundColor: '#0056b3' },
+									className="browse-button"
+									onClick={() => {
+										inputRef.current.click();
 									}}
 								>
-									Browse Files
+									<Typography className="browse-button-text">Browse Files</Typography>
+									<input
+										ref={inputRef}
+										type="file"
+										hidden={true}
+										onChange={uploadImages}
+										multiple={true}
+										accept="image/jpg, image/jpeg, image/png"
+									/>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+										<g clipPath="url(#clip0_7309_3249)">
+											<path
+												d="M15.5556 0H5.7778C5.53214 0 5.33334 0.198792 5.33334 0.444458C5.33334 0.690125 5.53214 0.888917 5.7778 0.888917H14.4827L0.130219 15.2413C-0.0434062 15.415 -0.0434062 15.6962 0.130219 15.8698C0.21701 15.9566 0.33076 16 0.444469 16C0.558177 16 0.671885 15.9566 0.758719 15.8698L15.1111 1.51737V10.2222C15.1111 10.4679 15.3099 10.6667 15.5556 10.6667C15.8013 10.6667 16.0001 10.4679 16.0001 10.2222V0.444458C16 0.198792 15.8012 0 15.5556 0Z"
+												fill="#181A20"
+											/>
+										</g>
+										<defs>
+											<clipPath id="clip0_7309_3249">
+												<rect width="16" height="16" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
 								</Button>
-								<input
-									ref={inputRef}
-									type="file"
-									hidden
-									onChange={uploadImages}
-									multiple
-									accept="image/jpg, image/jpeg, image/png"
-								/>
 							</Stack>
+							<Stack className="gallery-box">
+								{insertFacilityData?.facilityImages.map((image: string) => {
+									const imagePath: string = `${REACT_APP_API_URL}/${image}`;
+									return (
+										<Stack className="image-box">
+											<img src={imagePath} alt="" />
+										</Stack>
+									);
+								})}
+							</Stack>
+						</Stack>
 						</Stack>
 
 						{/* Save Button */}

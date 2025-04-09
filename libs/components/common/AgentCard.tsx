@@ -41,7 +41,7 @@ const AgentCard = (props: AgentCardProps) => {
 	});
 	const imagePath: string = agent?.memberImage
 		? `${REACT_APP_API_URL}/${agent?.memberImage}`
-		: '/img/profile/default-user.png';
+		: '/img/profile/defaultUserr.svg';
 
 	if (device === 'mobile') {
 		return (

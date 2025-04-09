@@ -115,7 +115,7 @@ export const InquiryList = (props: InquiryPanelListType) => {
 					<EnhancedTableHead />
 					<TableBody>
 						{[1, 2, 3, 4, 5].map((ele: any, index: number) => {
-							const member_image = '/img/profile/default-user.png';
+							const member_image = '/img/profile/defaultUserr.svg';
 
 							let status_class_name = '';
 

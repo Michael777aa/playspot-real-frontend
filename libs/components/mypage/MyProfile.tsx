@@ -171,7 +171,7 @@ const MyProfile: NextPage = ({ initialValues, ...props }: any) => {
 							src={
 								updateData?.memberImage
 									? `${REACT_APP_API_URL}/${updateData?.memberImage}`
-									: '/img/profile/default-user.png'
+									: '/img/profile/defaultUserr.svg'
 							}
 							sx={{
 								width: 80,
@@ -320,7 +320,7 @@ const MyProfile: NextPage = ({ initialValues, ...props }: any) => {
 							src={
 								updateData?.memberImage
 									? `${REACT_APP_API_URL}/${updateData?.memberImage}`
-									: '/img/profile/default-user.png'
+									: '/img/profile/defaultUserr.svg'
 							}
 							sx={{ width: 100, height: 100 }}
 						/>

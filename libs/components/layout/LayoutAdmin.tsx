@@ -75,7 +75,7 @@ const withAdminLayout = (Component: ComponentType) => {
 								<IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
 									<Avatar
 										src={
-											user?.memberImage ? `${REACT_APP_API_URL}/${user?.memberImage}` : '/img/profile/default-user.png'
+											user?.memberImage ? `${REACT_APP_API_URL}/${user?.memberImage}` : '/img/profile/defaultUserr.svg'
 										}
 									/>
 								</IconButton>
@@ -156,7 +156,7 @@ const withAdminLayout = (Component: ComponentType) => {
 							>
 								<Avatar
 									src={
-										user?.memberImage ? `${REACT_APP_API_URL}/${user?.memberImage}` : '/img/profile/default-user.png'
+										user?.memberImage ? `${REACT_APP_API_URL}/${user?.memberImage}` : '/img/profile/defaultUserr.svg'
 									}
 								/>
 								<Typography variant={'body2'} p={1} ml={1}>

@@ -178,7 +178,7 @@ export const updateUserInfo = (jwtToken: string) => {
 		memberEmail: claims.memberEmail ?? '',
 		memberImage:
 			claims.memberImage === null || claims.memberImage === undefined
-				? '/img/profile/default-user.png'
+				? '/img/profile/defaultUserr.svg'
 				: `${claims.memberImage}`,
 		memberAddress: claims.memberAddress ?? '',
 		memberDesc: claims.memberDesc ?? '',

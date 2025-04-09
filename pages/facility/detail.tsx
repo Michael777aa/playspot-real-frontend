@@ -847,7 +847,7 @@ console.log("DEMO URL", demoUrl);
 										src={
 											facility?.memberData?.memberImage
 												? `${REACT_APP_API_URL}/${facility?.memberData?.memberImage}`
-												: '/img/profile/default-user.png'
+												: '/img/profile/defaultUserr.svg'
 										}
 										alt="member"
 										style={{
@@ -1701,7 +1701,7 @@ console.log("DEMO URL", demoUrl);
 											src={
 												facility?.memberData?.memberImage
 													? `${REACT_APP_API_URL}/${facility?.memberData?.memberImage}`
-													: '/img/profile/default-user.png'
+													: '/img/profile/defaultUserr.svg'
 											}
 										/>
 										<Stack className={'name-phone-listings'}>

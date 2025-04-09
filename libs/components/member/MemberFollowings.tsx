@@ -89,7 +89,7 @@ const MemberFollowings = (props: MemberFollowingsProps) => {
 					{memberFollowings.map((follower: Following) => {
 						const imagePath: string = follower?.followingData?.memberImage
 							? `${REACT_APP_API_URL}/${follower?.followingData?.memberImage}`
-							: '/img/profile/default-user.png';
+							: '/img/profile/defaultUserr.svg';
 						return (
 							<Stack className="follows-card-box" key={follower._id}>
 								<Stack className={'info'} onClick={() => redirectToMemberPageHandler(follower?.followingData?._id)}>

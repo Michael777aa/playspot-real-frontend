@@ -19,7 +19,7 @@ const Review = (props: ReviewProps) => {
 	const user = useReactiveVar(userVar);
 	const imagePath: string = comment?.memberData?.memberImage
 		? `${REACT_APP_API_URL}/${comment?.memberData?.memberImage}`
-		: '/img/profile/default-user.png';
+		: '/img/profile/defaultUserr.svg';
 
 	/** HANDLERS **/
 	const goMemberPage = (id: string) => {

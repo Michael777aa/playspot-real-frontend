@@ -529,7 +529,7 @@ const Top = (props: topFilter) => {
 								>
 									<img
 										src={
-											user?.memberImage ? `${REACT_APP_API_URL}/${user?.memberImage}` : `/img/profile/default-user.png`
+											user?.memberImage ? `${REACT_APP_API_URL}/${user?.memberImage}` : `/img/profile/defaultUserr.svg`
 										}
 										alt="User Profile"
 										style={{
@@ -886,7 +886,7 @@ const Top = (props: topFilter) => {
 														src={
 															user?.memberImage
 																? `${REACT_APP_API_URL}/${user?.memberImage}`
-																: `/img/profile/default-user.png`
+																: `/img/profile/defaultUserr.svg`
 														}
 													/>
 												</div>

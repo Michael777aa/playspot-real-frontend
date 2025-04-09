@@ -333,7 +333,7 @@ const Chat = () => {
 									const { id, text, memberData, createdAt } = ele;
 									const memberImage = memberData?.memberImage
 										? `${REACT_APP_API_URL}/${memberData.memberImage}`
-										: '/img/profile/default-user.png';
+										: '/img/profile/defaultUserr.svg';
 									const memberName = memberData?.memberNick || 'Guest';
 
 									return (
@@ -564,7 +564,7 @@ const Chat = () => {
 									const { id, text, memberData, createdAt } = ele;
 									const memberImage = memberData?.memberImage
 										? `${REACT_APP_API_URL}/${memberData.memberImage}`
-										: '/img/profile/default-user.png';
+										: '/img/profile/defaultUserr.svg';
 									const memberName = memberData?.memberNick || 'Guest';
 
 									return (

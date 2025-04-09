@@ -198,7 +198,7 @@ const AgentDetail: NextPage = ({ initialInput, initialComment, ...props }: any) 
 						}}
 					>
 						<img
-							src={agent?.memberImage ? `${REACT_APP_API_URL}/${agent?.memberImage}` : '/img/profile/default-user.png'}
+							src={agent?.memberImage ? `${REACT_APP_API_URL}/${agent?.memberImage}` : '/img/profile/defaultUserr.svg'}
 							alt=""
 							style={{
 								width: '100px',
@@ -407,7 +407,7 @@ const AgentDetail: NextPage = ({ initialInput, initialComment, ...props }: any) 
 				<Stack className={'container'}>
 					<Stack className={'agent-info'}>
 						<img
-							src={agent?.memberImage ? `${REACT_APP_API_URL}/${agent?.memberImage}` : '/img/profile/default-user.png'}
+							src={agent?.memberImage ? `${REACT_APP_API_URL}/${agent?.memberImage}` : '/img/profile/defaultUserr.svg'}
 							alt=""
 						/>
 						<Stack

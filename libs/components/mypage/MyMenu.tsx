@@ -80,7 +80,7 @@ const MyMenu = () => {
 						}}
 					>
 						<img
-							src={user?.memberImage ? `${REACT_APP_API_URL}/${user?.memberImage}` : '/img/profile/default-user.png'}
+							src={user?.memberImage ? `${REACT_APP_API_URL}/${user?.memberImage}` : '/img/profile/defaultUserr.svg'}
 							alt="member-photo"
 							style={{ width: '100%', height: '100%', objectFit: 'cover' }}
 						/>
@@ -269,7 +269,7 @@ const MyMenu = () => {
 					</Stack>
 					<Stack component={'div'} className={'profile-img'}>
 						<img
-							src={user?.memberImage ? `${REACT_APP_API_URL}/${user?.memberImage}` : '/img/profile/default-user.png'}
+							src={user?.memberImage ? `${REACT_APP_API_URL}/${user?.memberImage}` : '/img/profile/defaultUserr.svg'}
 							alt={'member-photo'}
 						/>
 					</Stack>
