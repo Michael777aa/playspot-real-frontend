@@ -32,8 +32,7 @@ const TopAgentCard = (props: TopAgentProps) => {
 			<div className="order-number">#{orderNumber}</div>
 			<strong >{agent?.memberNick}</strong>
 			<h1  style={{marginTop:20}} >{agent?.memberType}</h1>
-			<span style={{position:"relative", top:"125px"}}  >Premium</span>
-			<span >Premium</span>
+			<span style={{position:"relative", top:"115px"}}  >Premium</span>
 
 		</Stack>
 		);
